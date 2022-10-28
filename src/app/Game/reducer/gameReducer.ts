@@ -1,9 +1,10 @@
 import * as React from "react";
 
-const actionTypes = {
-  squareClicked: "squareClicked",
-  gameReset: "gameReset",
-};
+const actionTypes: { squareClicked: "squareClicked"; gameReset: "gameReset" } =
+  {
+    squareClicked: "squareClicked",
+    gameReset: "gameReset",
+  };
 
 const markX = "X";
 const markO = "O";
@@ -34,12 +35,12 @@ export const useActions = (
 ) => ({
   squareClicked: (idx: number) =>
     dispatch({
-      type: actionTypes.squareClicked as Type,
+      type: actionTypes.squareClicked,
       payload: idx,
     }),
   gameReset: () =>
     dispatch({
-      type: actionTypes.gameReset as Type,
+      type: actionTypes.gameReset,
     }),
 });
 
