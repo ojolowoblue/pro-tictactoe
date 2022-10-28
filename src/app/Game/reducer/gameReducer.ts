@@ -1,4 +1,4 @@
-import { Dispatch } from "react";
+import * as React from "react";
 
 const actionTypes = {
   squareClicked: "squareClicked",
@@ -29,7 +29,7 @@ export const initialState = {
 };
 
 export const useActions = (
-  dispatch: Dispatch<{ type: Type; payload?: number }>,
+  dispatch: React.Dispatch<{ type: Type; payload?: number }>,
   state: unknown
 ) => ({
   squareClicked: (idx: number) =>
