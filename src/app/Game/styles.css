@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-box {
+  padding-top: 30px;
+  width: 412px;
+  height: 600px;
+  background: #0c1017;
+}
+
+.board {
+  padding: 50px 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  background: #12162f;
+  height: 112px;
+  width: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:36px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.square-X {
+  background: #11243a;
+  border: solid 1px #2475C5;
+  color: #2475C5
+}
+
+.square-O {
+  background: #371e23;
+  border: solid 1px #E45651;
+  color: #E45651
+}
